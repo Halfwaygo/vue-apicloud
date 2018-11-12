@@ -11,7 +11,7 @@
         .bar-nav {
             background-color: #0099FF;
         }
-        
+
         .bar-nav .title {
             color: #fff;
         }
@@ -23,6 +23,8 @@
         <a class="icon iconfont icon-back pull-left" id="back"></a>
         <h1 class="title" id="title">入口页面</h1>
     </header>
+    <router-view></router-view>
+        <div>123</div>
     <script>
         apiready = function() {
             api.setStatusBarStyle({
