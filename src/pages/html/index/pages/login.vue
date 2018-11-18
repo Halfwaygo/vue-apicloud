@@ -1,28 +1,5 @@
 <template>
   <div class="login-page">
-    <!-- <v-toolbar height="40" color="red" dark fixed clipped-right>
-       登录
-     </v-toolbar> -->
-     <!-- <div class="form-style">
-       <v-flex xs10 offset-xs1>
-                <v-text-field @keyup.enter="search(keyword)" type="search" prepend-icon="search" v-model="keyword" flat clearable @input="getSuggestions(keyword)"></v-text-field>
-        </v-flex>
-     </div> -->
-
-       <!-- <v-container grid-list-md text-xs-center>
-        <v-layout row wrap>
-          <v-flex xs12>
-            <v-card dark color="primary">
-              <v-card-text class="px-0">12</v-card-text>
-            </v-card>
-          </v-flex>
-          <v-flex v-for="i in 2" :key="`6${i}`" xs6>
-            <v-card  color="secondary">
-              <v-card-text class="px-0">6</v-card-text>
-            </v-card>
-          </v-flex>
-        </v-layout>
-      </v-container> -->
       <v-app id="inspire">
         <v-content >
           <v-container fluid fill-height>
@@ -32,18 +9,6 @@
                   <v-toolbar dark color="red">
                     <v-toolbar-title>登录</v-toolbar-title>
                     <v-spacer></v-spacer>
-                    <!-- <v-tooltip bottom>
-                      <v-btn
-                        icon
-                        large
-                        :href="source"
-                        target="_blank"
-                        slot="activator"
-                      >
-                        <v-icon large>code</v-icon>
-                      </v-btn>
-                      <span>Source</span>
-                    </v-tooltip> -->
                   </v-toolbar>
                   <v-card-text>
                     <v-form>
@@ -92,7 +57,6 @@ export default {
       this.$router.push('register')
     },
     findPass() {
-
     },
     submit() {
       this.$router.push('index')

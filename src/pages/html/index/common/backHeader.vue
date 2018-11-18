@@ -1,10 +1,10 @@
 <template>
-  <div>
+  <div class="back-header">
     <v-toolbar >
-      <v-btn icon @click="goBack">
+      <v-btn icon @click="goBack" v-show="isBack">
         <v-icon>arrow_back</v-icon>
       </v-btn>
-      <v-toolbar-title>注册</v-toolbar-title>
+      <v-toolbar-title>{{ title }}</v-toolbar-title>
     </v-toolbar>
 
   </div>
@@ -13,6 +13,7 @@
 
 <script>
 export default {
+  props: ['title', 'isBack'],
   data() {
     return {
       title: '找回密码'
@@ -26,6 +27,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="less">
+  .back-header {
+    .v-toolbar__title {
+      margin: 0 auto;
+    }
+  }
 </style>

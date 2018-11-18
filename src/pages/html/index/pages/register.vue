@@ -1,6 +1,6 @@
 <template>
   <div class="register-page">
-     <back-header :title="title"></back-header>
+     <back-header :title="title" :isBack="isBack"></back-header>
      <div class="content">
        <v-form>
         <v-text-field  v-model="form.phone" color="red"  label="请输入手机号" type="text"></v-text-field>
@@ -52,6 +52,7 @@ export default {
       title: '找回密码',
       isShowGetCode: true,
       paddingTime: null,
+      isBack: true,
     }
   },
   methods: {
@@ -87,6 +88,9 @@ export default {
       })
       return promise
     }
+  },
+  created() {
+
   }
 }
 </script>
