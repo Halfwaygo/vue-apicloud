@@ -2,7 +2,7 @@
   <div class="index-page">
     <back-header :title="title" :isBack="false"></back-header>
 
-    <v-carousel height="250">
+    <v-carousel height="250" style="margin-top:56px">
       <v-carousel-item
           height="250"
           v-for="(item,i) in bannerArr"

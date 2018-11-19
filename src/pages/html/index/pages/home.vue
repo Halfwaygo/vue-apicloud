@@ -1,7 +1,6 @@
 <template>
   <div>
     <router-view class="main-content"></router-view>
-    <div>{{bottomNav}}</div>
     <v-card height="200px" flat fixed>
       <v-bottom-nav
         :active.sync="bottomNav"

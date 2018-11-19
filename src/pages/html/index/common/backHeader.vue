@@ -1,6 +1,6 @@
 <template>
   <div class="back-header">
-    <v-toolbar >
+    <v-toolbar fixed>
       <v-btn icon @click="goBack" v-show="isBack">
         <v-icon>arrow_back</v-icon>
       </v-btn>
@@ -16,7 +16,6 @@ export default {
   props: ['title', 'isBack'],
   data() {
     return {
-      title: '找回密码'
     }
   },
   methods: {
